@@ -13,6 +13,19 @@
 
   <!-- custom css -->
   <link rel="stylesheet" href="css/style.css" />
+
+  <style>
+    .btn-box {
+      margin-top: -10px;
+      margin-bottom: 50px;
+    }
+
+    @media (max-width: 768px) {
+      .btn-box {
+        margin-bottom: 70px;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -46,7 +59,7 @@
         <span class="animate" style="--i:4;"></span>
       </p>
 
-      <div class="btn-box" style="margin-top: -10px;">
+      <div class="btn-box">
         <a href="#contact" class="btn ">Hire Me</a>
         <a href="#contact" class="btn ">Let's Talk</a>
         <span class="animate" style="--i:5;"></span>
@@ -484,6 +497,23 @@
   <!-- custom js -->
   <script src="js/ContactMe.js"></script>
   <script src="js/script.js"></script>
+
+  <!-- scroll reveal configuration -->
+  <script>
+    ScrollReveal({
+      reset: true,
+      distance: '60px',      // Slightly reduced distance for smoother mobile transitions
+      duration: 1500,        // Faster duration for more responsive feel
+      delay: 100,           // Reduced delay for quicker response
+      origin: 'bottom',
+      threshold: 0.02,      // Very low threshold to trigger animation as soon as element starts entering viewport
+      easing: 'ease-out',   // Changed to ease-out for smoother mobile transitions
+      mobile: true,
+      viewFactor: 0.05,     // Reduced viewFactor for earlier triggering
+      useDelay: 'always',   // Ensures consistent timing
+      interval: 100         // Controls timing between multiple elements
+    });
+  </script>
 
 </body>
 
